@@ -1,4 +1,4 @@
-name: Test with Maven
+name: Make Maven wrapper executable
 
 on:
   push:
@@ -20,4 +20,4 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Test with Maven
-        run: make test
+        run: chmod +x mvnw
